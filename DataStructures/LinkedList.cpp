@@ -1,6 +1,7 @@
 #include "LinkedList.h"
 using namespace std;
 
+// Time: O(n)
 void LinkedList::push(int val) {
     if (!head) {
         head = new Node(val);
@@ -17,6 +18,7 @@ void LinkedList::push(int val) {
     size++;
 }
 
+// Time: O(n)
 int LinkedList::valueAt(int index) {
     if (index >= size || index < 0) throw length_error("index is not within the bounds [0, size)");
     Node *tmp = head;
@@ -28,6 +30,7 @@ int LinkedList::valueAt(int index) {
     return tmp->val;
 }
 
+// Time: O(n)
 void LinkedList::removeAt(int index) {
     if (index >= size || index < 0) throw length_error("index is not within the bounds [0, size)");
 
