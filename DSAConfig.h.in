@@ -1,0 +1,3 @@
+// the configured options and settings for DSA
+#define DSA_VERSION_MAJOR @DSA_VERSION_MAJOR@
+#define DSA_VERSION_MINOR @DSA_VERSION_MINOR@
